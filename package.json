@@ -1,0 +1,26 @@
+{
+  "name": "chemistry-elements",
+  "version": "0.0.1",
+  "description": "Simple utility library for providing information about the periodic table and the elements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickLevy/chemistry-elements.git"
+  },
+  "keywords": [
+    "chemistry",
+    "chemical",
+    "elements",
+    "periodic",
+    "table"
+  ],
+  "author": "Patrick Levy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PatrickLevy/chemistry-elements/issues"
+  },
+  "homepage": "https://github.com/PatrickLevy/chemistry-elements#readme"
+}
