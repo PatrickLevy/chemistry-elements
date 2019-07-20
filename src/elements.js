@@ -1,6 +1,6 @@
-import {groups, metalTypes} from "./groups";
+const { groups, metalTypes } = require('./groups.js');
 
-export const elements1To20 = [
+const allElements = [
   {
     elementName: 'Hydrogen',
     symbol: 'H',
@@ -341,9 +341,6 @@ export const elements1To20 = [
     metalType: metalTypes.metal,
     valenceElectrons: 2,
   },
-];
-
-export const elements21To38 = [ //eslint-disable-line
   {
     elementName: 'Scandium',
     symbol: 'Sc',
@@ -511,9 +508,7 @@ export const elements21To38 = [ //eslint-disable-line
     metalType: metalTypes.metal,
     valenceElectrons: 2,
   },
-];
-
-export const elementsAdditional = [
+  // Additional
   {
     elementName: 'Zirconium',
     symbol: 'Zr',
@@ -712,8 +707,13 @@ export const elementsAdditional = [
   },
 ];
 
-export default {
+const elements1To20 = allElements.filter(e => (e.protons >= 1 && e.protons <= 20));
+const elements21To38 = allElements.filter(e => (e.protons >= 21 && e.protons <= 38));
+const elementsAdditional = allElements.filter(e => e.protons > 38);
+
+module.exports = {
+  allElements,
   elements1To20,
   elements21To38,
-  elementsAdditional
-}
+  elementsAdditional,
+};

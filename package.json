@@ -4,7 +4,8 @@
   "description": "Simple utility library for providing information about the periodic table and the elements.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "jest",
+    "lint": "./node_modules/.bin/eslint ./"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/PatrickLevy/chemistry-elements/issues"
   },
-  "homepage": "https://github.com/PatrickLevy/chemistry-elements#readme"
+  "homepage": "https://github.com/PatrickLevy/chemistry-elements#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0"
+  }
 }

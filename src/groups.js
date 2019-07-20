@@ -1,4 +1,4 @@
-export const groups = {
+const groups = {
   alkaliMetal: {
     id: 'alkaliMetal',
     label: 'Alkali Metal',
@@ -41,7 +41,7 @@ export const groups = {
   },
 };
 
-export const metalTypes = {
+const metalTypes = {
   metal: {
     id: 'metal',
     label: 'Metal',
@@ -54,4 +54,9 @@ export const metalTypes = {
     id: 'metalloid',
     label: 'Metalloid',
   },
+};
+
+module.exports = {
+  groups,
+  metalTypes,
 };
