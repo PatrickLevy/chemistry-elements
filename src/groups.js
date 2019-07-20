@@ -54,7 +54,7 @@ const metalTypes = {
     id: 'metalloid',
     label: 'Metalloid',
   },
-};
+}
 
 module.exports = {
   groups,
